@@ -2,6 +2,12 @@
 We will create a Markdown service that will read .md files from the classpath and loads an associated .css file to
 style the generated HTML. Markdown is handy when documenting our REST APIs, and its much easier than writing HTML!
 
+# Starting
+This project uses the Typesafe Activator Launcher, only a Java 6 or higher must be installed on your computer and 
+the activator-laucher will do the rest:
+
+    $ ./activator 'run-main com.example.Main'
+
 # Spray MarkdownService inspiration
 This markdown service has been inspired by the MarkdownService from a deprecated example I found on the Internet.
 
@@ -18,8 +24,8 @@ Just use your favorite browser and nagivate to:
 Alternatively, you can install [httpie](https://github.com/jakubroztocil/httpie),
 a great tool for testing your REST services, like spray! 
     
-    http GET http://localhost:8080/doc/index.md
+    $ http GET http://localhost:8080/doc/index.md
     
-    http GET http://localhost:8080/css/markdown.css
+    $ http GET http://localhost:8080/css/markdown.css
     
 Have fun!
