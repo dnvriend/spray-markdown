@@ -31,7 +31,9 @@ trait MarkdownService extends Directives {
 object Main extends App with SimpleRoutingApp with MarkdownService{
   implicit val system = ActorSystem("my-system")
 
-  startServer(interface = "localhost", port = 8080) {
+  val config = Config(system)
+
+  startServer(interface = config.bindAddress, port = config.bindPort) {
     markdownRoute
   }
 

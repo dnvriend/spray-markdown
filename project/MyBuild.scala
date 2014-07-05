@@ -4,9 +4,9 @@ import sbt.Keys._
 object MyBuild extends Build {
 
   val akkaTut =
-    Project("spray-crypto", file(".")) settings(
+    Project("spray-markdown", file(".")) settings(
       organization := "com.example",
-      name := "akka-tutorial",
+      name := "spray-markdown",
       scalaVersion := "2.10.4",
       resolvers += "spray" at "http://repo.spray.io/",
       libraryDependencies ++= dependencies,
