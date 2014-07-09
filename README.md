@@ -57,7 +57,7 @@ or
     
 The resulting jar will be placed in:
      
-    $ target/scala-2.10
+    $ target/scala-2.11
     
 # Spray MarkdownService inspiration
 This markdown service has been inspired by the MarkdownService from a deprecated example I found on the Internet.
